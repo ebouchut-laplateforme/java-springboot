@@ -1,13 +1,17 @@
 package com.ericbouchut.springboot;
 
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
 import java.util.Objects;
 
 /**
- * Handmade "Entity" class (not persisted nor a Spring Boot Entity).
- *
+ * A Spring Boot Entity that models a software engineer.
  */
+@Entity
 public class SoftwareEngineer {
+    @Id
     private Integer id;
     private String name;
     private String techStack;
